@@ -3,12 +3,12 @@
  *
  *      Whatsapp Chat Support
  *      Version: 1.2
- *      By castlecode
+ *      ByKevin Kenfack
  *
- *      Contact: http://codecanyon.net/user/castlecode
+ *      Contact: https://kevinkenfack.com/contact
  *      Created: December 10, 2018
  *
- *      Copyright (c) 2018, castlecode. All rights reserved.
+ *      Copyright (c) 2018,Kevin Kenfack. All rights reserved.
  *      Available only in http://codecanyon.net/
  *      
  *      ---------------------------------
