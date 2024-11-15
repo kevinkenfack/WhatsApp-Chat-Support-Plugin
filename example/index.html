@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WhatsApp Chat Support widget</title>
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+
+	<meta name="description" content="Provides a quick way to interact with your customers. Just click to chat on WhatsApp."/>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- needed for mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  
+  	<!-- Import font -->
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+  	<!-- Style for Bootstrap -->
+  	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  	
+  	<!-- Custom style for the demo-->
+  	<link rel="stylesheet" href="css/demo.css">
+
+  	<!-- Style of the plugin -->
+  	<link rel="stylesheet" href="../plugin/whatsapp-chat-support.css">
+  	<link rel="stylesheet" href="../plugin/components/Font Awesome/css/font-awesome.min.css">
+
+  	<style>
+  		#example_2,
+  		#example_3,
+  		#example_4,
+  		#example_5,
+  		#example_6{
+  			display: none;
+  		}
+  	</style>
+  	
+</head>
+<body>
+
+	<div class="welcome-section">
+
+		<div class="welcome-section-content">
+	
+			<h2>
+				WHATSAPP<br> <strong>CHAT SUPPORT</strong>
+				<small>jQuery Plugin for your HTML Website Template/Theme</small>
+			</h2>
+
+			<p>
+				Provides a quick way to interact with your customers.<br>
+				Just click to chat on WhatsApp.<br>
+			</p>
+
+			<p>Supports Single and Multiple Accounts</p>
+
+			<div class="welcome-section-buttons">
+				<a href="../documentation/index.html" target="_blank" class="browse">READ DOCUMENTATON</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="grid-section">
+		<div class="content text-center">
+
+		 	<div class="content_section">
+
+			 	<h2>Usage Examples</h2>
+			 	<p>
+					Just click on one of the examples below so you can see it in action
+				</p>
+
+				<div class="text-center">
+					<label>Change the Popup Effect <small>comes with 13 effects</small></label>
+					<br>
+					<select id="change_effect" class="form-control" style="max-width:150px;display:inline-block;">
+						<option value="1" selected>Fade In & Scale</option>
+						<option value="2">Slide In (Right)</option>
+						<option value="3">Slide In (Bottom)</option>
+						<option value="4">Newspaper</option>
+						<option value="5">Fall</option>
+						<option value="6">Side Fall</option>
+						<option value="7">Rotate From Bottom</option>
+						<option value="8">Rotate From Left</option>
+						<option value="9">3D Flip Horizontal</option>
+						<option value="10">3D Flip Vertical</option>
+						<option value="11">3D Sign</option>
+						<option value="12">Super Scaled</option>
+						<option value="13">3D Split</option>
+					</select>	
+				</div>
+
+				<br><br><br><br>
+
+				<div class="usage_examples">
+					<div class="row">
+						<div class="col-xs-6 usage_example" data-show="#example_1">
+							<img src="img/example_1.png" alt="">
+							<div class="usage_example_label">Multiple Accounts</div>
+						</div>
+						<div class="col-xs-6 usage_example" data-show="#example_2">
+							<img src="img/example_2.png" alt="">
+							<div class="usage_example_label">Multiple Accounts</div>
+						</div>
+					</div>
+					
+					<br><br>
+
+					<div class="row">
+						<div class="col-xs-6 usage_example" data-show="#example_3">
+							<img src="img/example_3.png" alt="">
+							<div class="usage_example_label">Single Account</div>
+						</div>
+						<div class="col-xs-6 usage_example" data-show="#example_4">
+							<img src="img/example_4.png" alt="">
+							<div class="usage_example_label">Single Account</div>
+						</div>
+					</div>
+
+					<br><br>
+
+					<div class="row">
+						<div class="col-xs-6 usage_example" data-show="#example_5">
+							<img src="img/example_5.png" alt="">
+							<div class="usage_example_label">Button Only</div>
+						</div>
+						<div class="col-xs-6 usage_example" data-show="#example_6">
+							<img src="img/example_6.png" alt="">
+							<div class="usage_example_label">Button Only</div>
+						</div>
+					</div>
+				</div>
+
+			<!--
+				/* ====================================================================== *
+			            EXAMPLE 1
+			     * ====================================================================== */
+			 -->
+
+			 	<div class="whatsapp_chat_support wcs_fixed_right" id="example_1">
+					<div class="wcs_button_label">
+			 			Questions? Let's Chat
+			 		</div>	
+					<div class="wcs_button wcs_button_circle">
+						<span class="fa fa-whatsapp"></span>
+					</div>	
+
+					<div class="wcs_popup">
+						<div class="wcs_popup_close">
+							<span class="fa fa-close"></span>
+						</div>
+						<div class="wcs_popup_header">
+							<strong>Need Help? Chat with us</strong>
+							<br>
+							<div class="wcs_popup_header_description">Click one of our representatives below</div>
+						</div>	
+						<div class="wcs_popup_person_container">
+							<div class="wcs_popup_person" data-number="528123861273" data-default-msg="Hi, I have some questions about sales, can you please help me?">
+								<div class="wcs_popup_person_img"><img src="img/person_5.jpg" alt=""></div>
+								<div class="wcs_popup_person_content">
+									<div class="wcs_popup_person_name">Mia Smith</div>
+									<div class="wcs_popup_person_description">Sales Support</div>
+									<div class="wcs_popup_person_status">I'm Online</div>
+								</div>	
+							</div>
+
+							<div class="wcs_popup_person" data-number="528123861273">
+								<div class="wcs_popup_person_img"><img src="img/person_6.jpg" alt=""></div>
+								<div class="wcs_popup_person_content">
+									<div class="wcs_popup_person_name">James Brown</div>
+									<div class="wcs_popup_person_description">Customer Support</div>
+									<div class="wcs_popup_person_status">I'm Online</div>
+								</div>
+							</div>
+
+							<div class="wcs_popup_person" data-number="528123861273" data-availability='{}'>
+								<div class="wcs_popup_person_img"><img src="img/person_7.jpg" alt=""></div>
+								<div class="wcs_popup_person_content">
+									<div class="wcs_popup_person_name">Robert Miller</div>
+									<div class="wcs_popup_person_description">Techincal Support</div>
+									<div class="wcs_popup_person_status">I'm Online</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+			<!--
+				/* ====================================================================== *
+			            EXAMPLE 2
+			     * ====================================================================== */
+			 -->
+
+			 	<div class="whatsapp_chat_support wcs_fixed_right" id="example_2">
+			 		<div class="wcs_button">
+						<span class="fa fa-whatsapp"></span> Need Help?
+					</div>	
+
+					<div class="wcs_popup">
+						<div class="wcs_popup_close">
+							<span class="fa fa-close"></span>
+						</div>
+						<div class="wcs_popup_header">
+							<strong>Need Help? Chat with us</strong>
+							<br>
+							<div class="wcs_popup_header_description">Click one of our representatives below</div>
+						</div>	
+						<div class="wcs_popup_person_container">
+							<div class="wcs_popup_person" data-number="528123861273">
+								<div class="wcs_popup_person_img"><img src="img/person_1.jpg" alt=""></div>
+								<div class="wcs_popup_person_content">
+									<div class="wcs_popup_person_name">John Miller</div>
+									<div class="wcs_popup_person_description">Sales Support</div>
+									<div class="wcs_popup_person_status">I'm Online</div>
+								</div>	
+							</div>
+
+							<div class="wcs_popup_person" data-number="528123861273">
+								<div class="wcs_popup_person_img"><img src="img/person_2.jpg" alt=""></div>
+								<div class="wcs_popup_person_content">
+									<div class="wcs_popup_person_name">Emily Jones</div>
+									<div class="wcs_popup_person_description">Customer Support</div>
+									<div class="wcs_popup_person_status">I'm Online</div>
+								</div>
+							</div>
+
+							<div class="wcs_popup_person" data-number="528123861273" data-availability='{}'>
+								<div class="wcs_popup_person_img"><img src="img/person_3.jpg" alt=""></div>
+								<div class="wcs_popup_person_content">
+									<div class="wcs_popup_person_name">Robert Wilson</div>
+									<div class="wcs_popup_person_description">Techincal Support</div>
+									<div class="wcs_popup_person_status">I'm Online</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+			<!--
+				/* ====================================================================== *
+			            EXAMPLE 3
+			     * ====================================================================== */
+			 -->	
+
+			 	<div class="whatsapp_chat_support wcs_fixed_right" id="example_3">
+					<div class="wcs_button_label">
+			 			Questions? Let's Chat
+			 		</div>	
+					<div class="wcs_button wcs_button_circle">
+						<span class="fa fa-whatsapp"></span>
+					</div>	
+
+					<div class="wcs_popup">
+						<div class="wcs_popup_close">
+							<span class="fa fa-close"></span>
+						</div>
+						<div class="wcs_popup_header">
+							<span class="fa fa-whatsapp"></span>
+							<strong>Customer Support</strong>
+							
+							<div class="wcs_popup_header_description">Need Help? Chat with us on Whatsapp</div>
+						</div>	
+						<div class="wcs_popup_input" data-number="528123861273">
+							<input type="text" placeholder="Ask anything!" />
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="wcs_popup_avatar">
+							<img src="img/person_5.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+			<!--
+				/* ====================================================================== *
+			            EXAMPLE 4
+			     * ====================================================================== */
+			 -->	
+
+			 	<div class="whatsapp_chat_support wcs_fixed_right" id="example_4">
+					<div class="wcs_button">
+						<span class="fa fa-whatsapp"></span> Questions?
+					</div>	
+
+					<div class="wcs_popup">
+						<div class="wcs_popup_close">
+							<span class="fa fa-close"></span>
+						</div>
+						<div class="wcs_popup_header">
+							<span class="fa fa-whatsapp"></span>
+							<strong>Customer Support</strong>
+							
+							<div class="wcs_popup_header_description">Need Help? Chat with us on Whatsapp</div>
+						</div>	
+						<div class="wcs_popup_input" data-number="528123861273">
+							<input type="text" placeholder="Ask anything!" />
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="wcs_popup_avatar">
+							<img src="img/person_4.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+			<!--
+				/* ====================================================================== *
+			            EXAMPLE 5
+			     * ====================================================================== */
+			 -->	
+
+			 	<div class="whatsapp_chat_support wcs_fixed_right" id="example_5">
+					<div class="wcs_button_label">
+			 			Questions? Let's Chat
+			 		</div>	
+					<div class="wcs_button wcs_button_circle" data-number="528123861273">
+						<span class="fa fa-whatsapp"></span>
+					</div>	
+				</div>
+
+			<!--
+				/* ====================================================================== *
+			            EXAMPLE 6
+			     * ====================================================================== */
+			 -->	
+
+			 	<div class="whatsapp_chat_support wcs_fixed_right" id="example_6">
+					<div class="wcs_button" data-number="528123861273">
+						<span class="fa fa-whatsapp"></span> Questions?
+					</div>	
+				</div>
+
+			</div>
+
+		</div>
+		
+		<hr>
+
+		<div class="content text-center">
+
+		<!--
+			/* ====================================================================== *
+		            WHATSAPP BUTTONS
+		     * ====================================================================== */
+		 -->
+		
+			<div class="content_section">
+
+			 	<h2>Buttons</h2>
+			 	<p>
+					Inline click to chat WhatsApp buttons.<br>
+					Define when you are available!
+				</p>
+
+				<div class="whatsapp_chat_support" id="example_7">
+					<div class="wcs_button wcs_button_person" data-number="528123861273" data-availability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"00:00-23:59", "thursday":"00:00-23:59", "friday":"00:00-23:59", "saturday":"00:00-23:59" }'>
+
+						<div class="wcs_button_person_img"><img src="img/person_7.jpg" alt=""></div>
+						<div class="wcs_button_person_content">
+							<div class="wcs_button_person_name">Robert Smith &nbsp;/&nbsp; Sales Support</div>
+							<div class="wcs_button_person_description">Need help? Chat via whatsApp</div>
+							<div class="wcs_button_person_status">I'm Online</div>
+						</div>
+
+					</div>	
+				</div>
+
+
+				<div class="whatsapp_chat_support" id="example_8">
+					<div class="wcs_button wcs_button_person" data-number="528123861273" data-availability='{}'>
+
+						<div class="wcs_button_person_img"><img src="img/person_5.jpg" alt=""></div>
+						<div class="wcs_button_person_content">
+							<div class="wcs_button_person_name">Emily Clark &nbsp;/&nbsp; Techincal Support</div>
+							<div class="wcs_button_person_description">Need help? Chat via whatsApp</div>
+							<div class="wcs_button_person_status">I'm Online</div>
+						</div>
+
+					</div>	
+				</div>	
+
+			</div>
+
+			<br><br>
+
+		<!--
+			/* ====================================================================== *
+		            WHATSAPP BUTTONS WITH AN ICON
+		     * ====================================================================== */
+		 -->
+		
+			<div class="content_section">
+
+			 	<h2>Buttons with an Icon</h2>
+			 	<p>
+					Instead of an avatar you can have an icon
+				</p>
+
+				<div class="whatsapp_chat_support" id="example_9">
+					<div class="wcs_button wcs_button_person" data-number="528123861273" data-availability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"00:00-23:59", "thursday":"00:00-23:59", "friday":"00:00-23:59", "saturday":"00:00-23:59" }' style="border-radius: 5px;">
+
+						<div class="wcs_button_person_img"><span class="fa fa-whatsapp"></span></div>
+						<div class="wcs_button_person_content">
+							<div class="wcs_button_person_name">Sales Support</div>
+							<div class="wcs_button_person_description">Questions? Let's chat</div>
+							<div class="wcs_button_person_status">I'm Online</div>
+						</div>
+
+					</div>	
+				</div>
+
+
+				<div class="whatsapp_chat_support" id="example_10">
+					<div class="wcs_button wcs_button_person" data-number="528123861273" data-availability='{}' style="border-radius: 5px;">
+
+						<div class="wcs_button_person_img"><span class="fa fa-whatsapp"></span></div>
+						<div class="wcs_button_person_content">
+							<div class="wcs_button_person_name">Techincal Support</div>
+							<div class="wcs_button_person_description">Questions? Let's chat</div>
+							<div class="wcs_button_person_status">I'm Online</div>
+						</div>
+
+					</div>	
+				</div>	
+
+			</div>
+
+			<br><br>
+
+		<!--
+			/* ====================================================================== *
+		            WHATSAPP BUTTONS OF DIFFERENT COLORS
+		     * ====================================================================== */
+		 -->
+		
+			<div class="content_section">
+
+			 	<h2>Buttons of Different Colors</h2>
+			 	<p>
+					You can easily customize the buttons with CSS
+				</p>
+
+				<div class="whatsapp_chat_support" id="example_11">
+					<div class="wcs_button wcs_button_person" data-number="528123861273" style="background: #3498db;">
+
+						<div class="wcs_button_person_img"><img src="img/person_1.jpg" alt=""></div>
+						<div class="wcs_button_person_content">
+							<div class="wcs_button_person_name">James Hill &nbsp;/&nbsp; Techincal Support</div>
+							<div class="wcs_button_person_description">Hi, I'm here to answer your questions</div>
+							<div class="wcs_button_person_status">I'm Online</div>
+						</div>
+
+					</div>	
+				</div>
+
+
+				<div class="whatsapp_chat_support" id="example_12">
+					<div class="wcs_button wcs_button_person" data-number="528123861273" style="background: #9b59b6;">
+
+						<div class="wcs_button_person_img"><img src="img/person_2.jpg" alt=""></div>
+						<div class="wcs_button_person_content">
+							<div class="wcs_button_person_name">Emma Turner &nbsp;/&nbsp; Techincal Support</div>
+							<div class="wcs_button_person_description">Questions? Chat via WhatsApp</div>
+							<div class="wcs_button_person_status">I'm Online</div>
+						</div>
+
+					</div>	
+				</div>	
+
+
+				<div class="whatsapp_chat_support" id="example_13">
+					<div class="wcs_button wcs_button_person" data-number="528123861273" style="background: #1abc9c;">
+
+						<div class="wcs_button_person_img"><img src="img/person_3.jpg" alt=""></div>
+						<div class="wcs_button_person_content">
+							<div class="wcs_button_person_name">Christopher Harris &nbsp;/&nbsp; Techincal Support</div>
+							<div class="wcs_button_person_description">Need help? Let's chat via WhatsApp</div>
+							<div class="wcs_button_person_status">I'm Online</div>
+						</div>
+
+					</div>	
+				</div>	
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="content">
+
+			<div class="headline">
+				<h2>Why WhatsApp Chat Support?</h2>
+
+				<p>
+					These are just few main features of the plugin.
+				</p>
+			</div>
+			
+			<div class="features-container">
+
+				<div class="row">
+  					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-clock-o"></i>
+  							</div>
+  							<h4>Time Availability</h4>
+  							<p>Specify the time when you are available to chat with your customers during the week.</p>
+  						</div>
+  					</div>
+
+  					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-group"></i>
+  							</div>
+							<h4>Single and Multiple Accounts</h4>
+							<p>You can have the plugin with just one person or with multiple accounts at a time.</p>
+						</div>
+  					</div>
+
+  					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-comment-o"></i>
+  							</div>
+							<h4>Message When Offline</h4>
+							<p>Specify the message to show your customers when you are not available.</p>
+						</div>
+  					</div>
+
+  				</div>
+
+  				<div class="row">
+  					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-globe"></i>
+  							</div>
+  							<h4>Availability in your Customer's Timezone</h4>
+  							<p>If your customer is in a different timezone your availability will be automatically converted for him.</p>
+  						</div>
+  					</div>
+
+  					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-cog"></i>
+  							</div>
+							<h4>Customizable</h4>
+							<p>Edit the colors via CSS or play around with the options in the JS initialization.</p>
+						</div>
+  					</div>
+
+  					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-css3"></i>
+  							</div>
+							<h4>CSS3 Effects</h4>
+							<p>The effects are using CSS3 transitions and GPU acceleration in order to give you the best performance available.</p>
+						</div>
+  					</div>
+
+  				</div>
+				
+				<div class="row">
+
+					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-desktop"></i>
+  							</div>
+							<h4>Cross-browser support</h4>
+							<p>Tested on IE, Chrome, Mozilla, Safari, Opera and Mobile Browsers.</p>
+						</div>
+  					</div>
+
+  					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-file-text"></i>
+  							</div>
+  							<h4>Documentation</h4>
+  							<p>Step-by-step documentation from the simplest thing to the most advanced stuff, you can read it for free before you buy <a href="../documentation/index.html">here</a>.</p>
+  						</div>
+  					</div>
+
+  					<div class="col-sm-4">
+  						<div class="feature-text">
+  							<div class="feature-icon">
+  								<i class="fa fa-life-ring"></i>
+  							</div>
+  							<h4>Free support</h4>
+  							<p>You can ask any question regarding the plugin before or after you buy and also get free updates</p>
+  						</div>
+  					</div>
+
+  				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="grid-section footer">
+		<div class="content">
+		    © 2019 WhatsApp Chat Support. Plugin made by <a href="http://codecanyon.net/user/castlecode">castlecode</a>
+		</div>
+	</div>
+
+	<!-- jQuery 1.8+ -->
+	<script src="../plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+
+	<!-- Bootstrap and demo JS file -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/demo.js"></script>
+
+	<!-- Plugin JS file -->
+	<script src="../plugin/components/moment/moment.min.js"></script>
+	<!--<script src="../plugin/components/moment/moment-timezone-with-data.min.js"></script>-->
+	<script src="../plugin/components/moment/moment-timezone-with-data-10-year-range.min.js"></script>
+	<script src="../plugin/whatsapp-chat-support.js"></script>
+
+	<script>
+		$('#example_1').whatsappChatSupport();
+
+		$('#example_2').whatsappChatSupport();
+
+		$('#example_3').whatsappChatSupport({
+			defaultMsg : '',
+		});
+
+		$('#example_4').whatsappChatSupport({
+			defaultMsg : '',
+		});
+
+		$('#example_5').whatsappChatSupport();
+
+		$('#example_6').whatsappChatSupport();
+
+		$('#example_7').whatsappChatSupport();
+
+		$('#example_8').whatsappChatSupport();
+
+		$('#example_9').whatsappChatSupport();
+
+		$('#example_10').whatsappChatSupport();
+
+		$('#example_11').whatsappChatSupport();
+		
+		$('#example_12').whatsappChatSupport();
+
+		$('#example_13').whatsappChatSupport();
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Documentation | WhatsApp Chat Support</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="Learn how the Media Boxes works">
+    
+        <!-- loading the css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <style>
+            body{
+                font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+                margin-left: 180px;
+                padding-bottom: 40px;
+            }
+            
+            .navigation{
+                width: 180px;
+                height: 100%;
+                background: #222;
+                position: absolute;
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+
+            .navigation ul{
+                width: 100%;
+            }
+
+            .navigation ul li:first-child{
+                padding-top: 30px !important;
+            }
+
+            .navigation ul li{
+                list-style: none;
+                padding: 3px 0;
+                font-size: 13px;
+                font-weight: 200;
+                float: none !important;
+            }
+            
+            .navigation ul li a{
+                color: #aaabae;
+                text-decoration: none;
+                text-shadow: none !important;
+            }
+
+            .navigation ul li a:hover,
+            .navigation ul li.active a{
+                background-color: rgba(69, 74, 84, 0.3);
+                color: #fff;
+            }
+        
+            .container{
+                width: 100%;
+                padding: 0px 40px;
+                -webkit-box-sizing: border-box; 
+                   -moz-box-sizing: border-box; 
+                        box-sizing: border-box;
+            }
+
+            section{
+                padding-bottom: 60px;
+            }
+
+            .highlight{
+                background-color: #FDFDB1;
+            }
+
+            .filters li{
+                margin: 15px 0;
+            }
+
+            .content{
+                background: #f1f1f1;
+                padding: 20px;
+            }
+
+            h4{
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            img{
+                max-width: 100%;
+            }
+
+            .prettyprint{
+                background-color: #fff !important;
+            }
+        </style>
+
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        
+        <div class="navigation navbar">
+            <ul class="nav">
+                <li class="active"><a href="#overview">Overview</a></li>
+                <li><a href="#includingfiles">Including Files</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#initialization">Initialization</a></li>
+                <li><a href="#options">Options</a></li>
+            </ul>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+        
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview" style="padding-top:20px;">
+                
+                <h1>WhatsApp Chat Support <small>by <a href="https://kevinkenfack.com" target="_blank">Kevin Kenfack</a></small></h1>
+
+                <br>
+
+                <div class="content">
+                    Thank you for purchasing this plugin. 
+                    <br>
+                    If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form 
+                    <a href="https://kevinkenfack.com/contact">here</a>. 
+                </div>
+
+                 <div class="content">
+                    Here are the steps to include this plugin in your existing page/theme:
+                    <br>
+                    <ol>
+                        <li>First include the CSS and JS files in your page, as shown <a href="#includingfiles">here</a></li>
+                        <li>Then pick one of the buttons found <a href="#html">here</a> and copy/paste the HTML into your page</li>
+                        <li>Finally initialize the plugin with Javascript, copy the code from <a href="#initialization">here</a>, the code would go at the bottom of your page (<strong>after</strong> the JS files of the plugin and the HTML of your button)</li>
+                    </ol>
+                </div>     
+                
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+            
+            <!-- ========================= SECTION: INCLUDING FILES >> START ========================= -->
+            <section id="includingfiles">
+                <h2>Including files</h2>
+
+                <br>
+
+                <div class="content">
+                    <p>These are all the files you need to import in your page so the plugin can work.</p>
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&lt;!-- Style of the plugin --&gt;
+&lt;link rel="stylesheet" href="plugin/whatsapp-chat-support.css"&gt;
+
+
+&lt;!-- jQuery 1.8+ --&gt;
+&lt;script src="plugin/components/jQuery/jquery-1.11.3.min.js"&gt;&lt;/script&gt;
+
+
+&lt;!-- Plugin JS file --&gt;
+&lt;script src="plugin/components/moment/moment.min.js"&gt;&lt;/script&gt;
+&lt;script src="plugin/components/moment/moment-timezone-with-data.min.js"&gt;&lt;/script&gt; &lt;!-- spanish language (es) --&gt;
+&lt;script src="plugin/whatsapp-chat-support.js"&gt;&lt;/script&gt;
+</pre>
+<!-- Code Block >> End -->                
+                
+                    <p>It’s not required, but I recommend placing the CSS files in <code>&lt;head&gt;</code> and the JavaScript files and initialization code in the footer of your site (before the closing <code>&lt;/body&gt;</code> tag). Also if you already have jquery.js on your site, don’t include it a second time.</p>
+     
+
+                </div>
+            </section>
+            <!-- ========================= SECTION: INCLUDING FILES >> END ========================= -->
+
+            
+            <!-- ========================= SECTION: HTML >> START ========================= -->
+            <section id="html">
+                <h2>HTML | Inline Button</h2>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-md-9">
+
+                        <div class="content">
+                            <p>This would be the HTML for an inline button, which you can drop next to your existing HTML</p>
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&#60;div class="whatsapp_chat_support" id="example">
+    &#60;div 
+        class="wcs_button wcs_button_person" 
+        <span class="highlight">data-number="528123861273"</span>
+        <span class="highlight">data-availability='{ "monday":"08:30-18:30", "tuesday":"08:30-18:30", "wednesday":"08:30-18:30", "thursday":"08:30-18:30", "friday":"08:30-18:30" }'</span>
+    >
+
+        &#60;div class="wcs_button_person_img">&#60;img src="img/person_7.jpg" alt="">&#60;/div>
+        &#60;div class="wcs_button_person_content">
+            &#60;div class="wcs_button_person_name">Robert Smith &nbsp;/&nbsp; Sales Support&#60;/div>
+            &#60;div class="wcs_button_person_description">Need help? Chat via whatsApp&#60;/div>
+            &#60;div class="wcs_button_person_status">I'm Online&#60;/div>
+        &#60;/div>
+
+    &#60;/div>  
+&#60;/div>
+</pre>
+<!-- Code Block >> End -->                
+                
+                            <p>Notice where you specify the phone number and the availability. If you don't specify the <code>data-availability</code> attribute then the plugin will always show it available!</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/img/inline_button.png" style="width: 100%;" />
+                    </div>
+                </div>     
+            </section>
+
+            <section id="html">
+                <h2>HTML | Fixed Button With Popup for a Single Account</h2>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-md-9">
+
+                        <div class="content">
+                            <p>This would be the HTML for an inline button, which you can drop next to your existing HTML</p>
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&#60;div class="whatsapp_chat_support wcs_fixed_right" id="example_3">
+    &#60;div class="wcs_button_label">
+            Questions? Let's Chat
+        &#60;/div>  
+    &#60;div class="wcs_button wcs_button_circle">
+        &#60;span class="fa fa-whatsapp">&#60;/span>
+    &#60;/div>  
+
+    &#60;div class="wcs_popup">
+        &#60;div class="wcs_popup_close">
+            &#60;span class="fa fa-close">&#60;/span>
+        &#60;/div>
+        &#60;div class="wcs_popup_header">
+            &#60;span class="fa fa-whatsapp">&#60;/span>
+            &#60;strong>Customer Support&#60;/strong>
+            
+            &#60;div class="wcs_popup_header_description">Need Help? Chat with us on Whatsapp&#60;/div>
+        &#60;/div>  
+        &#60;div 
+            class="wcs_popup_input" 
+            <span class="highlight">data-number="528123861273"</span>
+            <span class="highlight">data-availability='{ "monday":"08:30-18:30", "tuesday":"08:30-18:30", "wednesday":"08:30-18:30", "thursday":"08:30-18:30", "friday":"08:30-18:30" }'</span>
+        >
+            &#60;input type="text" placeholder="Ask anything!" />
+            &#60;i class="fa fa-play">&#60;/i>
+        &#60;/div>
+        &#60;div class="wcs_popup_avatar">
+            &#60;img src="img/person_5.jpg" alt="">
+        &#60;/div>
+    &#60;/div>
+&#60;/div>
+</pre>
+<!-- Code Block >> End -->                
+                
+                            <p>Notice where you specify the phone number and the availability. If you don't specify the <code>data-availability</code> attribute then the plugin will always show it available!</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/img/single_account.png" style="width: 100%;" />
+                    </div>
+                </div>   
+            </section>
+
+            <section id="html-multipleaccounts">
+                <h2>HTML | Fixed Button With Popup for Multiple Accounts</h2>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-md-9">
+
+                        <div class="content">
+                            <p>If you want a fixed button with multiple accounts this is the HTML you would need</p>
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&#60;div class="whatsapp_chat_support wcs_fixed_right" id="example">
+    &#60;div class="wcs_button_label">
+        Questions? Let's Chat
+    &#60;/div>  
+    &#60;div class="wcs_button wcs_button_circle">
+        &#60;span class="fa fa-whatsapp">&#60;/span>
+    &#60;/div>  
+
+    &#60;div class="wcs_popup">
+        &#60;div class="wcs_popup_close">
+            &#60;span class="fa fa-close">&#60;/span>
+        &#60;/div>
+        &#60;div class="wcs_popup_header">
+            &#60;strong>Need Help? Chat with us&#60;/strong>
+            &#60;br>
+            &#60;div class="wcs_popup_header_description">Click one of our representatives below&#60;/div>
+        &#60;/div>  
+        &#60;div class="wcs_popup_person_container">
+            &#60;div 
+                class="wcs_popup_person" 
+                <span class="highlight">data-number="528123861273"</span>
+                <span class="highlight">data-availability='{ "monday":"08:30-18:30", "tuesday":"08:30-18:30", "wednesday":"08:30-18:30", "thursday":"08:30-18:30", "friday":"08:30-18:30" }'</span>
+            >
+                &#60;div class="wcs_popup_person_img">&#60;img src="img/person_5.jpg" alt="">&#60;/div>
+                &#60;div class="wcs_popup_person_content">
+                    &#60;div class="wcs_popup_person_name">Mia Smith&#60;/div>
+                    &#60;div class="wcs_popup_person_description">Sales Support&#60;/div>
+                    &#60;div class="wcs_popup_person_status">I'm Online&#60;/div>
+                &#60;/div>  
+            &#60;/div>
+
+            &#60;div 
+                class="wcs_popup_person" 
+                <span class="highlight">data-number="528123861273"</span>
+                <span class="highlight">data-availability='{ "monday":"08:30-18:30", "tuesday":"08:30-18:30", "wednesday":"08:30-18:30", "thursday":"08:30-18:30", "friday":"08:30-18:30" }'</span>
+            >
+                &#60;div class="wcs_popup_person_img">&#60;img src="img/person_6.jpg" alt="">&#60;/div>
+                &#60;div class="wcs_popup_person_content">
+                    &#60;div class="wcs_popup_person_name">James Brown&#60;/div>
+                    &#60;div class="wcs_popup_person_description">Customer Support&#60;/div>
+                    &#60;div class="wcs_popup_person_status">I'm Online&#60;/div>
+                &#60;/div>
+            &#60;/div>
+
+            &#60;div 
+                class="wcs_popup_person" 
+                <span class="highlight">data-number="528123861273"</span>
+                <span class="highlight">data-availability='{ "monday":"08:30-18:30", "tuesday":"08:30-18:30", "wednesday":"08:30-18:30", "thursday":"08:30-18:30", "friday":"08:30-18:30" }'</span>
+            >
+                &#60;div class="wcs_popup_person_img">&#60;img src="img/person_7.jpg" alt="">&#60;/div>
+                &#60;div class="wcs_popup_person_content">
+                    &#60;div class="wcs_popup_person_name">Robert Miller&#60;/div>
+                    &#60;div class="wcs_popup_person_description">Techincal Support&#60;/div>
+                    &#60;div class="wcs_popup_person_status">I'm Online&#60;/div>
+                &#60;/div>
+            &#60;/div>
+        &#60;/div>
+    &#60;/div>
+&#60;/div>  
+</pre>
+<!-- Code Block >> End -->                
+                
+                            <p>Notice where you specify the phone number and the availability. If you don't specify the <code>data-availability</code> attribute then the plugin will always show it available!</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/img/multiple_accounts.png" style="width: 100%;" />
+                    </div>
+                </div>   
+            </section>
+
+            <section id="html-multipleaccounts">
+                <h2>HTML | Fixed Button Without popup (button only)</h2>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-md-9">
+
+                        <div class="content">
+                            <p>If you want a fixed button without popup this is the HTML you would need</p>
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&#60;div class="whatsapp_chat_support wcs_fixed_right" id="example">
+    &#60;div class="wcs_button_label">
+        Questions? Let's Chat
+    &#60;/div>  
+    &#60;div class="wcs_button wcs_button_circle">
+        &#60;span class="fa fa-whatsapp">&#60;/span>
+    &#60;/div>  
+&#60;/div>  
+</pre>
+<!-- Code Block >> End -->                
+                
+                            <p>Notice where you specify the phone number and the availability. If you don't specify the <code>data-availability</code> attribute then the plugin will always show it available!</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/img/button_only.png" style="width: 100%;" />
+                    </div>
+                </div>      
+            </section>
+            <!-- ========================= SECTION: HTML >> END ========================= -->            
+
+
+            <!-- ========================= SECTION: INCLUDING FILES >> START ========================= -->
+            <section id="initialization">
+                <h2>Initialization</h2>
+
+                <br>
+
+                <div class="content">
+                    <p>Once you got the HTML markup in your site you need to initialize the plugin in Javascript.</p>
+
+                    <p>You need to take the id from the "whatsapp_chat_support" div (In the example above would be: id="example") and use it for the initialization.</p>
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&#60;script>
+    $('#example_1').whatsappChatSupport();
+&#60;/script>
+</pre>
+<!-- Code Block >> End -->                
+                
+                    <p>And here is where you can pass the JS options available. For example:</p>
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&#60;script>
+   $('#example_3').whatsappChatSupport({
+        defaultMsg : '',
+    });
+&#60;/script>
+</pre>
+<!-- Code Block >> End -->          
+
+                    <p>You can see the options available <a href="#options">here</a></p>
+
+                </div>
+            </section>
+            <!-- ========================= SECTION: INCLUDING FILES >> END ========================= -->
+
+
+            <!-- ========================= SECTION: INCLUDING FILES >> START ========================= -->
+            <section id="options">
+                <h2>Options</h2>
+
+                <br>
+
+                <div class="content">
+                    <p>Here you can see the JS options available for the plugin.</p>
+
+                    <table class="table table-stripped table-bordered" style="background: white;">
+                        <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Type</th>    
+                                <th>Default</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>popupFx</code></td>
+                                <td>string</td>
+                                <td>1</td>
+                                <td>The popup effect from 0 till 14</td>
+                            </tr>
+                            <tr>
+                                <td><code>now</code></td>
+                                <td>string</td>
+                                <td></td>
+                                <td>When empty it will use the date and time from the user browser if not you can assign it with PHP maybe (which will be the date of the server) format: YYYY-MM-DD HH:mm:ss (2019-12-30 18:30:00) </td>
+                            </tr>
+                            <tr>
+                                <td><code>timezone</code></td>
+                                <td>string</td>
+                                <td>America/Chicago</td>
+                                <td>When using the date and time from the user browser you can transform it to your current timezone (in case your user is in a different timezone)</td>
+                            </tr>
+                            <tr>
+                                <td><code>notAvailableMsg</code></td>
+                                <td>string</td>
+                                <td>I am not available today</td>
+                                <td>Message when its not an available day or once the available hours have passed</td>
+                            </tr>
+                            <tr>
+                                <td><code>almostAvailableMsg</code></td>
+                                <td>string</td>
+                                <td>I will be available soon</td>
+                                <td>If today is an available day and before the time starts</td>
+                            </tr>
+                            <tr>
+                                <td><code>dialogNotAvailableMsg</code></td>
+                                <td>string</td>
+                                <td>I am not available today</td>
+                                <td>In the dialog, there will be a message when its not an available day or once the available hours have passed</td>
+                            </tr>
+                            <tr>
+                                <td><code>dialogAlmostAvailableMsg</code></td>
+                                <td>string</td>
+                                <td>I will be available soon</td>
+                                <td>In the dialog if today is an available day and before the time starts</td>
+                            </tr>
+                            <tr>
+                                <td><code>defaultMsg</code></td>
+                                <td>string</td>
+                                <td>Hi, I have some questions about this page: {{url}}!</td>
+                                <td>Default support message</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div class="alert alert-info" style="margin:0;text-align:center;">
+                                        EVENTS
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>onPopupOpen</code></td>
+                                <td>function</td>
+                                <td>function(){}</td>
+                                <td>This event is triggered when the modal opens.</td>
+                            </tr>
+                            <tr>
+                                <td><code>onPopupClose</code></td>
+                                <td>function</td>
+                                <td>function(){}</td>
+                                <td>This event is triggered when the modal closes.</td>
+                            </tr>
+                            <tr>
+                                <td><code>whenGoingToWhatsApp</code></td>
+                                <td>function</td>
+                                <td>function(number, text){}</td>
+                                <td>This event is triggered when the plugin redirects you to WhatsApp.</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                     <p>You can pass the JS options to the <code>whatsappChatSupport</code> JS function like this (these are the default values)</p>
+
+<pre class="prettyprint linenums">
+&lt;script&gt;
+    
+    $('#example').whatsappChatSupport({
+        
+        // Options
+        
+        popupFx                     :   '1', // The popup effect from 0 till 14
+        now                         :   '', // When empty it will use the date and time from the user browser if not you can assign it with PHP maybe (which will be the date of the server) format: YYYY-MM-DD HH:mm:ss (2019-12-30 18:30:00) 
+        timezone                    :   'America/Chicago', // When using the date and time from the user browser you can transform it to your current timezone (in case your user is in a different timezone)
+        notAvailableMsg             :   'I am not available today', // message when its not an available day or once the available hours have passed
+        almostAvailableMsg          :   'I will be available soon', // if today is an available day and before the time starts
+        dialogNotAvailableMsg       :   'I am not available today', // message when its not an available day or once the available hours have passed
+        dialogAlmostAvailableMsg    :   'I will be available soon', // if today is an available day and before the time starts
+        defaultMsg                  :   'Hi, I have some questions about this page: {{url}}!', // default support msg     
+
+        // Events
+
+        onPopupOpen          : function(){},
+        onPopupClose         : function(){},
+        whenGoingToWhatsApp  : function(number, text){},   
+
+    }); 
+    
+&lt;/script&gt;
+</pre>    
+
+                </div>
+            </section>
+            <!-- ========================= SECTION: INCLUDING FILES >> END ========================= -->
+
+        </div>
+        <!-- ========================= MAIN CONTAINER >> END ========================= -->
+     
+
+        <!-- loading javascripts -->
+        <script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+
+
+
+    </body>
+    
+</html>
